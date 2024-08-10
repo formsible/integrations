@@ -1,0 +1,10 @@
+{
+    "name": "google-sheets",
+    "version": "1.0.0",
+    "description": "Integration to save form responses to Google Sheets",
+    "author": "Your Name",
+    "repository": "https://github.com/formsible/integrations",
+    "permissions": [
+        "https://www.googleapis.com/auth/spreadsheets"
+    ]
+}

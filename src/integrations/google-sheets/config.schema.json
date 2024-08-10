@@ -1,0 +1,35 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Google Drive & Sheets Integration Configuration",
+    "description": "Configuration schema for the Google Drive & Sheets integration.",
+    "type": "object",
+    "properties": {
+        "apiKey": {
+            "type": "string",
+            "description": "The API key used to authenticate requests to Google APIs."
+        },
+        "spreadsheetId": {
+            "type": "string",
+            "description": "The ID of the Google Spreadsheet where form responses will be saved."
+        },
+        "sheetName": {
+            "type": "string",
+            "description": "The name of the sheet within the spreadsheet where data will be appended.",
+            "default": "Sheet1"
+        },
+        "valueInputOption": {
+            "type": "string",
+            "enum": [
+                "RAW",
+                "USER_ENTERED"
+            ],
+            "description": "Determines how input data should be interpreted.",
+            "default": "RAW"
+        }
+    },
+    "required": [
+        "apiKey",
+        "spreadsheetId"
+    ],
+    "additionalProperties": false
+}
